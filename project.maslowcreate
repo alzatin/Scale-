@@ -25,19 +25,6 @@
             "ioValues": []
         },
         {
-            "atomType": "Circle",
-            "name": "Circle",
-            "x": 0.24513172966781216,
-            "y": 0.36363636363636365,
-            "uniqueID": 1715884540366,
-            "ioValues": [
-                {
-                    "name": "diameter",
-                    "ioValue": 10
-                }
-            ]
-        },
-        {
             "atomType": "Input",
             "name": "shape",
             "x": 0.013333333333333334,
@@ -46,36 +33,19 @@
             "ioValues": []
         },
         {
-            "atomType": "Extrude",
-            "name": "Extrude",
-            "x": 0.3493699885452463,
-            "y": 0.561128526645768,
-            "uniqueID": 1715884542183,
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": 1715884540366
-                },
-                {
-                    "name": "height",
-                    "ioValue": 10
-                }
-            ]
-        },
-        {
             "atomType": "Code",
             "name": "Code",
-            "x": 0.5693012600229095,
-            "y": 0.4702194357366772,
+            "x": 0.44902634593356244,
+            "y": 0.5642633228840126,
             "uniqueID": 1715884538217,
             "ioValues": [
                 {
                     "name": "shape",
-                    "ioValue": 1715884542183
+                    "ioValue": 10
                 },
                 {
                     "name": "scale",
-                    "ioValue": 0.3
+                    "ioValue": 10
                 }
             ],
             "code": "//Inputs:[shape, scale];\nconsole.log(shape)\nconsole.log(scale)\n\nreturn [library[shape].geometry[0].clone().scale(scale)]\n//what you return should be a replicad geometry\n\n//Learn more about all of the available methods at \n //https://replicad.xyz/docs/introapp/UserGuide.html \n"
@@ -86,23 +56,35 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": 1715884472474,
-            "ioValues": []
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": 1715884538217
+                }
+            ]
         }
     ],
     "allConnectors": [
         {
-            "ap1Name": "geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": true,
-            "ap1ID": 1715884540366,
-            "ap2ID": 1715884542183
+            "ap1Name": "number or geometry",
+            "ap2Name": "scale",
+            "ap2Primary": false,
+            "ap1ID": 1715884483060,
+            "ap2ID": 1715884538217
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "shape",
+            "ap2Primary": false,
+            "ap1ID": 1715884474533,
+            "ap2ID": 1715884538217
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "shape",
+            "ap2Name": "number or geometry",
             "ap2Primary": false,
-            "ap1ID": 1715884542183,
-            "ap2ID": 1715884538217
+            "ap1ID": 1715884538217,
+            "ap2ID": 1715884472474
         }
     ],
     "fileTypeVersion": 1,
