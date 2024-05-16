@@ -6,11 +6,11 @@
     "uniqueID": 1715882756760,
     "ioValues": [
         {
-            "name": "shape",
+            "name": "scale",
             "ioValue": 10
         },
         {
-            "name": "scale",
+            "name": "shape",
             "ioValue": 10
         }
     ],
@@ -65,8 +65,8 @@
         {
             "atomType": "Code",
             "name": "Code",
-            "x": 0.4925544100801833,
-            "y": 0.5047021943573667,
+            "x": 0.49140893470790376,
+            "y": 0.5109717868338558,
             "uniqueID": 1715884538217,
             "ioValues": [
                 {
@@ -75,10 +75,10 @@
                 },
                 {
                     "name": "scale",
-                    "ioValue": 0
+                    "ioValue": 1
                 }
             ],
-            "code": "//Inputs:[shape, scale];\n\n\nreturn [library[shape].geometry[0].clone().scale([0,0,0],scale)]\n//what you return should be a replicad geometry\n\n//Learn more about all of the available methods at \n //https://replicad.xyz/docs/introapp/UserGuide.html \n"
+            "code": "//Inputs:[shape, scale];\nconsole.log(scale)\n\nreturn [library[shape].geometry[0].clone().scale([0,0,0],scale)]\n//what you return should be a replicad geometry\n\n//Learn more about all of the available methods at \n //https://replicad.xyz/docs/introapp/UserGuide.html \n"
         },
         {
             "atomType": "Output",
