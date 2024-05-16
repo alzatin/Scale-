@@ -48,8 +48,8 @@
         {
             "atomType": "Extrude",
             "name": "Extrude",
-            "x": 0.35738831615120276,
-            "y": 0.5893416927899686,
+            "x": 0.3493699885452463,
+            "y": 0.561128526645768,
             "uniqueID": 1715884542183,
             "ioValues": [
                 {
@@ -65,8 +65,8 @@
         {
             "atomType": "Code",
             "name": "Code",
-            "x": 0.4879725085910653,
-            "y": 0.5235109717868338,
+            "x": 0.5693012600229095,
+            "y": 0.4702194357366772,
             "uniqueID": 1715884538217,
             "ioValues": [
                 {
@@ -75,10 +75,10 @@
                 },
                 {
                     "name": "scale",
-                    "ioValue": 1
+                    "ioValue": 0.3
                 }
             ],
-            "code": "//Inputs:[shape, scale];\nconsole.log(shape)\nconsole.log(scale)\n\nreturn [library[shape].geometry[0].clone().scale(10)]\n//what you return should be a replicad geometry\n\n//Learn more about all of the available methods at \n //https://replicad.xyz/docs/introapp/UserGuide.html \n"
+            "code": "//Inputs:[shape, scale];\nconsole.log(shape)\nconsole.log(scale)\n\nreturn [library[shape].geometry[0].clone().scale(scale)]\n//what you return should be a replicad geometry\n\n//Learn more about all of the available methods at \n //https://replicad.xyz/docs/introapp/UserGuide.html \n"
         },
         {
             "atomType": "Output",
