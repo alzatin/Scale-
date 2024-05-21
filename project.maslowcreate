@@ -35,8 +35,8 @@
         {
             "atomType": "Code",
             "name": "Code",
-            "x": 0.44902634593356244,
-            "y": 0.5642633228840126,
+            "x": 0.44432432432432434,
+            "y": 0.5705329153605015,
             "uniqueID": 1715884538217,
             "ioValues": [
                 {
@@ -56,12 +56,7 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": 1715884472474,
-            "ioValues": [
-                {
-                    "name": "number or geometry",
-                    "ioValue": 1715884538217
-                }
-            ]
+            "ioValues": []
         }
     ],
     "allConnectors": [
