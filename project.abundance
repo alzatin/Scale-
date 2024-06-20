@@ -38,12 +38,7 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": 1715884472474,
-            "ioValues": [
-                {
-                    "name": "number or geometry",
-                    "ioValue": 1718904196980
-                }
-            ]
+            "ioValues": []
         },
         {
             "atomType": "Code",
